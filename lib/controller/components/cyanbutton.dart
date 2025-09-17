@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+class CyanButton extends StatelessWidget {
+  String text;
+   CyanButton({super.key,required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 40,
+      decoration:BoxDecoration(
+        color:Colors.cyan,
+        borderRadius:BorderRadius.circular(10),
+        border:Border.all(width:3,
+        color:Colors.white)
+      ),
+    child:Center(
+      child:Text(
+        text,
+        style:TextStyle(
+          color:Colors.white,
+
+        )
+      )
+    )
+
+    );
+  }
+}
