@@ -10,7 +10,7 @@ class TextFormwidget extends StatelessWidget {
           border: InputBorder.none,
           hintStyle: TextStyle(color: Colors.grey),
           hintText: text,
-          prefixIcon: Icon(Icons.call, color: Colors.grey),
+          //prefixIcon: Icon(Icons.call, color: Colors.grey),
     )
     );
   }

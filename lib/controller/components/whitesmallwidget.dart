@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BlackTextWidget extends StatelessWidget {
+class WhitesmallText extends StatelessWidget {
   final String text;
-  const BlackTextWidget({super.key,required this.text});
+  const WhitesmallText({super.key,required this.text});
 
   @override
   Widget build(BuildContext context) {

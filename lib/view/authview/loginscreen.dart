@@ -10,6 +10,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 20,),
             Center(child:
@@ -17,13 +18,15 @@ class LoginScreen extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: BlackTextWidget(text: 'Welcome back Again!'),
             )),
-            SizedBox(height: 15,),
             Padding(
-              padding: const EdgeInsets.all(4.0),
+              padding: const EdgeInsets.only(left: 45.0),
               child: GreyTextWidget(text: 'Your work faster and structured with todyApp'),
             ),
             SizedBox(height:30),
-            BlackTextWidget(text: 'Email Address'),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: BlackTextWidget(text: 'Email Address'),
+            ),
 
             Padding(
               padding: const EdgeInsets.all(8.0),

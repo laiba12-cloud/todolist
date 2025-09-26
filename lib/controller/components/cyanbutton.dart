@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todolist/controller/utills/appcolors.dart';
 class CyanButton extends StatelessWidget {
   String text;
    CyanButton({super.key,required this.text});
@@ -8,7 +9,7 @@ class CyanButton extends StatelessWidget {
     return Container(
       height: 40,
       decoration:BoxDecoration(
-        color:Colors.cyan,
+        color: AppColors.CyanColor,
         borderRadius:BorderRadius.circular(10),
         border:Border.all(width:3,
         color:Colors.white)
