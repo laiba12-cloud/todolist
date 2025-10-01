@@ -27,11 +27,11 @@ class OnBoardingoneScreen extends StatelessWidget {
                 children: [
                   Center(child: Image.asset(AppImages.MainImage)),
                   Padding(
-                    padding: const EdgeInsets.only(left: 60.0),
+                    padding: const EdgeInsets.only(left: 250.0),
                     child: Image.asset(AppImages.thirdImage),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
+                    padding: const EdgeInsets.only(left: 60.0),
                     child: Image.asset(AppImages.secondImage),
                   ),
                 ],

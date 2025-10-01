@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 class TextFormwidget extends StatelessWidget {
   final String text;
+
    TextFormwidget({super.key,required this. text});
 
   @override
@@ -10,7 +11,7 @@ class TextFormwidget extends StatelessWidget {
           border: InputBorder.none,
           hintStyle: TextStyle(color: Colors.grey),
           hintText: text,
-          //prefixIcon: Icon(Icons.call, color: Colors.grey),
+          prefixIcon: Icon(Icons.call, color: Colors.grey),
     )
     );
   }

@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:todolist/controller/utills/appcolors.dart';
 
-class BlackTextWidget extends StatelessWidget {
+class CyanTextWidget extends StatelessWidget {
   final String text;
-  const BlackTextWidget({super.key,required this.text});
+  const CyanTextWidget({super.key,required this.text});
 
   @override
   Widget build(BuildContext context) {
     return Text(text,style: GoogleFonts.poppins(
-          fontWeight: FontWeight.w500,
-          color: AppColors.BlackColor,
-          fontSize:15,
-        ),
+      fontWeight: FontWeight.w500,
+      color: AppColors.CyanColor,
+      fontSize:15,
+    ),
     );
   }
 }

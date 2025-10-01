@@ -12,16 +12,21 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.CyanColor,
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsets.only(top:28.0),
+            padding: const EdgeInsets.all(200),
             child: Image.asset(AppIcons.Logoimage),
           ),
-         SizedBox(height:20),
-          WhitelargeText(text: 'Tody app'),
-          SizedBox(height: 20,),
-          WhitesmallText(text: 'The best to do list application for you'),
+          Padding(
+            padding: const EdgeInsets.all(300),
+            child: WhitelargeText(text: 'Todyapp'),
+          ),
+          SizedBox(height: 10,),
+          Padding(
+            padding: const EdgeInsets.all(250.0),
+            child: WhitesmallText(text: 'The best to do list application for you'),
+          ),
           SizedBox(height: 10,),
           Padding(
             padding: const EdgeInsets.only(left: 8.0,right: 8.0),

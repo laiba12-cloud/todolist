@@ -3,8 +3,8 @@ import 'package:todolist/controller/components/blacktextwidget.dart';
 import 'package:todolist/controller/components/cyanbutton.dart';
 import 'package:todolist/controller/components/greytextwidget.dart';
 import 'package:todolist/controller/components/textboxwidget.dart';
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

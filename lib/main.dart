@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:todolist/view/authview/loginscreen.dart';
 import 'package:todolist/view/authview/onboarding/onboarding1.dart';
+import 'package:todolist/view/authview/onboarding/onboarding2.dart';
+import 'package:todolist/view/authview/onboarding/onboarding3.dart';
+import 'package:todolist/view/authview/signupscreen.dart';
 import 'package:todolist/view/startingview/splashscreen.dart';
 
 void main() {
@@ -15,9 +18,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:OnBoardingoneScreen()
+      home://OnBoardingthreeScreen()
+      //OnBoardingtwoScreen()
+      //OnBoardingoneScreen()
       //SplashScreen()
-      //LoginScreen(),// This trailing comma makes auto-formatting nicer for build methods.
+      //LoginScreen()
+      SignupScreen(),// This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
