@@ -23,23 +23,17 @@ class SignupScreen extends StatelessWidget {
             child: GreyTextWidget(text: 'Create your account and feels the benefits'),
           ),
           SizedBox(height:30),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: BlackTextWidget(text: 'User name'),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.all(10.0),
+          //   child: BlackTextWidget(text: 'User name'),
+          // ),
 
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Card(child: TextFormwidget(text: 'enter your user name')),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: BlackTextWidget(text: 'password'),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Card(child: TextFormwidget(text: 'enter your password')),
-          ),
+          TextFormwidget(hint: 'enter your user name',text: 'User name',),
+          // Padding(
+          //   padding: const EdgeInsets.all(10.0),
+          //   child: BlackTextWidget(text: 'password'),
+          // ),
+          TextFormwidget(hint: 'enter your password',text: 'Password',),
           Spacer(),
           Padding(
             padding: const EdgeInsets.all(40.0),

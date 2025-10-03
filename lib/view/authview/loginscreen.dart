@@ -23,14 +23,14 @@ class LoginScreen extends StatelessWidget {
               child: GreyTextWidget(text: 'Your work faster and structured with todyApp'),
             ),
             SizedBox(height:30),
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: BlackTextWidget(text: 'Email Address'),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.all(10.0),
+            //   child: BlackTextWidget(text: 'Email Address'),
+            // ),
 
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Card(child: TextFormwidget(text: 'name@example.com')),
+              child: TextFormwidget(hint: 'name@example.com',text: 'Email Address',),
             ),
             Spacer(),
             Padding(

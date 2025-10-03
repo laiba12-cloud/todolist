@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       //OnBoardingoneScreen()
       //SplashScreen()
       //LoginScreen()
-      SignupScreen(),// This trailing comma makes auto-formatting nicer for build methods.
+      SplashScreen(),// This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
