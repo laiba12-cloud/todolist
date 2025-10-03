@@ -13,7 +13,7 @@ class LogoButton extends StatelessWidget {
     return Container(
         height: 40,
         decoration:BoxDecoration(
-            color: AppColors.CyanColor,
+            color: AppColors.WhiteColor,
             borderRadius:BorderRadius.circular(10),
             border:Border.all(width:3,
                 color:AppColors.WhiteColor)
@@ -23,7 +23,7 @@ class LogoButton extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(icon),
-            BlackTextWidget(text:text),
+            BlackTextWidget(text:text,),
 
           ],
         )

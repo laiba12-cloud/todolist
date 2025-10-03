@@ -20,32 +20,34 @@ class _OnBoardingthreeScreenState extends State<OnBoardingthreeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: Row(
-          children: [
-            BlackTextWidget(text: 'Welcome To'),
-            CyanTextWidget(text: 'TodyApp'),
-          ],
+        title: Padding(
+          padding: const EdgeInsets.only(left:150.0,right: 30),
+          child: Row(
+            children: [
+              BlackTextWidget(text: 'Welcome To'),
+              CyanTextWidget(text: 'TodyApp'),
+            ],
+          ),
         ),
+        centerTitle: true,
 
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(
-              flex: 50,
-              child:Stack(
-                children: [
-                  Center(child: Image.asset(AppImages.MainImagethree)),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 250.0),
-                    child: Image.asset(AppImages.sevenimage),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 70.0,top: 100),
-                    child: Image.asset(AppImages.eightimage),
-                  ),
-                ],
-              ) ),
+          Stack(
+            children: [
+              Center(child: Image.asset(AppImages.MainImagethree)),
+              Padding(
+                padding: const EdgeInsets.only(right: 250.0,left: 100),
+                child: Image.asset(AppImages.sevenimage),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 250.0,top: 150),
+                child: Image.asset(AppImages.eightimage),
+              ),
+            ],
+          ),
 
                   Spacer(),
                   Padding(
@@ -62,10 +64,11 @@ class _OnBoardingthreeScreenState extends State<OnBoardingthreeScreen> {
                   ),
                   SizedBox(height: 10,),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                height: 3,
-                width: double.infinity,
+                height: 1,
+                width: 150,
                 decoration:BoxDecoration(
                   color: AppColors.BlackColor,
                   borderRadius: BorderRadius.circular(10),
@@ -73,8 +76,8 @@ class _OnBoardingthreeScreenState extends State<OnBoardingthreeScreen> {
               ),
               BlackTextWidget(text: 'or Continue with'),
               Container(
-                height: 3,
-                width: double.infinity,
+                height: 1,
+                width: 150,
                 decoration:BoxDecoration(
                   color: AppColors.BlackColor,
                   borderRadius: BorderRadius.circular(10),
@@ -85,7 +88,7 @@ class _OnBoardingthreeScreenState extends State<OnBoardingthreeScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              LogoButton(text: 'facebook', icon: AppIcons.facebookimage),
+              LogoButton(text: 'facebook', icon: AppIcons.fblogo),
               LogoButton(text: 'Google', icon: AppIcons.googleimage)
             ],
           ),

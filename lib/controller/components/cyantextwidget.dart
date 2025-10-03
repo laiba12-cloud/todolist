@@ -10,7 +10,7 @@ class CyanTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(text,style: GoogleFonts.poppins(
-      fontWeight: FontWeight.w500,
+      //fontWeight: FontWeight.w500,
       color: AppColors.CyanColor,
       fontSize:15,
     ),

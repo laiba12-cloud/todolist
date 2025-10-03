@@ -10,7 +10,7 @@ class BlackTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(text,style: GoogleFonts.poppins(
-          fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w200,
           color: AppColors.BlackColor,
           fontSize:15,
         ),
