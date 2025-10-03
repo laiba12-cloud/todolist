@@ -24,18 +24,20 @@ class SplashScreen extends StatelessWidget {
             WhitesmallText(text: 'The best to do list application for you'),
 
             SizedBox(height: 10,),
-            Row(children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
               Container(
-                height: 15,
+                height: 12,
                 width: 35,
                 color:Color(0xffCBF1F0),
               ),
               CircleAvatar(
-                radius: 15,
+                radius: 10,
                 backgroundColor: Color(0xffCBF1F0),
               ),
               CircleAvatar(
-                radius: 15,
+                radius: 10,
                 backgroundColor: Color(0xffCBF1F0),
               ),
             ],),
