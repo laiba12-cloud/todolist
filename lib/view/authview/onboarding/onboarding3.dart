@@ -56,10 +56,10 @@ class _OnBoardingthreeScreenState extends State<OnBoardingthreeScreen> {
                       height: 40,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(16),
                         color: AppColors.CyanColor,
                       ),
-                      child: TextFormbuttonwidget(text: 'Continue with email', icon: AppIcons.messagelogo),
+                      child: Center(child: TextFormbuttonwidget(text: 'Continue with email', icon: AppIcons.messagelogo)),
                     )
                   ),
                   SizedBox(height: 10,),

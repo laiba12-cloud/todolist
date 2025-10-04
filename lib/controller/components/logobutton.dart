@@ -22,7 +22,8 @@ class LogoButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset(icon),
+            Image.asset(icon,height: 20,),
+            SizedBox(width: 10,),
             BlackTextWidget(text:text,),
 
           ],
