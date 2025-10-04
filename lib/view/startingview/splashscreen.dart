@@ -30,11 +30,11 @@ class SplashScreen extends StatelessWidget {
               Container(
                 height: 12,
                 width: 35,
-                color:Color(0xffCBF1F0),
+                color:AppColors.lightCyan,//Color(0xffCBF1F0),
               ),
               CircleAvatar(
                 radius: 10,
-                backgroundColor:Color(0xffCBF1F0),
+                backgroundColor:AppColors.lightCyan,//Color(0xffCBF1F0),
               ),
               CircleAvatar(
                 radius: 10,
