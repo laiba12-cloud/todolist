@@ -23,4 +23,5 @@ class AppColors{
   static Color FuchsiaColor=Color(0xffFF00FF);
   static Color PurpleColor=Color(0xff800080);
   static Color CyanColor=Color(0xff24A19C);
+  static Color lightCyan=Color(0xffCBF1F0);
 }
