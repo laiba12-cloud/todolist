@@ -4,6 +4,7 @@ import 'package:todolist/view/authview/onboarding/onboarding1.dart';
 import 'package:todolist/view/authview/onboarding/onboarding2.dart';
 import 'package:todolist/view/authview/onboarding/onboarding3.dart';
 import 'package:todolist/view/authview/signupscreen.dart';
+import 'package:todolist/view/homeview/bottom-nav-screen.dart';
 import 'package:todolist/view/homeview/choosethemes.dart';
 import 'package:todolist/view/homeview/create%20task.dart';
 import 'package:todolist/view/startingview/splashscreen.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:CreateTask()
+      home:BottomNavScreen()
       //ThemeScreen()
       //OnBoardingthreeScreen()
       //OnBoardingtwoScreen()
