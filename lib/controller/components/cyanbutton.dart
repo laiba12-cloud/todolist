@@ -7,6 +7,7 @@ class CyanButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 18),
       height: 40,
       decoration:BoxDecoration(
         color: AppColors.CyanColor,

@@ -6,64 +6,67 @@ class ContainerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body:Column(
-        children: [
-          Container(
+    return Column(
+      children: [
+        Container(
+          margin: EdgeInsets.all(18),
             height:20,
             width:double.infinity,
             decoration:BoxDecoration(
               borderRadius: BorderRadius.only(topRight: Radius.circular(15),topLeft: Radius.circular(15)),
               color:color,
             )
-          ),
-          Container(
-            height:40,
-          width: double.infinity,
-              decoration: BoxDecoration(
+        ),
+        Container(
+            height:90,
+            width: double.infinity,
+            decoration: BoxDecoration(
                 color: AppColors.WhiteColor,
                 borderRadius:BorderRadius.only(bottomLeft: Radius.circular(10),bottomRight: Radius.circular(10),)
-              ),
-          child:Row(
-            children:[
-              CircleAvatar(
-                radius:40,
-                backgroundColor: AppColors.GreyColor,
-              ),
-              SizedBox(width:30),
-              Column(
-                children:
-                  [
-                    Container(
-                      height:10,
-                      width:400,
-                      decoration:BoxDecoration(
-                        color:AppColors.GreyColor,
-                        borderRadius:BorderRadius.circular(10),
-                      )
-                    ),
-                    Container(
-                        height:10,
-                        width:250,
-                        decoration:BoxDecoration(
-                          color:AppColors.GreyColor,
-                          borderRadius:BorderRadius.circular(10),
-                        )
-                    ),
-                    Container(
-                        height:10,
-                        width:300,
-                        decoration:BoxDecoration(
-                          color:AppColors.GreyColor,
-                          borderRadius:BorderRadius.circular(10),
-                        )
-                    ),
-                  ]
-              )
-            ]
-          ))
-        ],
-      )
-    );                                           
+            ),
+            child:Row(
+                children:[
+                  CircleAvatar(
+                    radius:40,
+                    backgroundColor: AppColors.GreyColor,
+                  ),
+                  SizedBox(width:5),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center ,
+                      children:
+                      [
+                        Container(
+                            height:10,
+                            width:300,
+                            decoration:BoxDecoration(
+                              color:AppColors.GreyColor,
+                              borderRadius:BorderRadius.circular(10),
+                            )
+                        ),
+                        SizedBox(height: 5,),
+                        Container(
+                            height:10,
+                            width:250,
+                            decoration:BoxDecoration(
+                              color:AppColors.GreyColor,
+                              borderRadius:BorderRadius.circular(10),
+                            )
+                        ),
+                        SizedBox(height: 10,),
+                        Container(
+                            height:10,
+                            width:340,
+                            decoration:BoxDecoration(
+                              color:AppColors.GreyColor,
+                              borderRadius:BorderRadius.circular(10),
+                            )
+                        ),
+                      ]
+                  )
+                ]
+            ))
+      ],
+    );
   }
 }
