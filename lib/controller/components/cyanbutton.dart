@@ -6,25 +6,27 @@ class CyanButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 18),
-      height: 40,
-      decoration:BoxDecoration(
-        color: AppColors.CyanColor,
-        borderRadius:BorderRadius.circular(10),
-        border:Border.all(width:3,
-        color:Colors.white)
-      ),
-    child:Center(
-      child:Text(
-        text,
-        style:TextStyle(
-          color:Colors.white,
+//
+    return InkWell(
+      child: Container(
+        height: 40,
+        decoration:BoxDecoration(
+          color: AppColors.CyanColor,
+          borderRadius:BorderRadius.circular(10),
+          border:Border.all(width:3,
+          color:Colors.white)
+        ),
+      child:Center(
+        child:Text(
+          text,
+          style:TextStyle(
+            color:Colors.white,
 
+          )
         )
       )
-    )
 
+      ),
     );
   }
 }
