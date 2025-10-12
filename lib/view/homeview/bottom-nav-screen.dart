@@ -35,14 +35,14 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
 
             });
         },
-        selectedIconTheme: IconThemeData(color: Colors.blue),
-        unselectedIconTheme: IconThemeData(color: Colors.purple),
+        selectedIconTheme: IconThemeData(color: AppColors.CyanColor),
+        unselectedIconTheme: IconThemeData(color: AppColors.GreyColor.withObacity(2)),
           items: [
-        BottomNavigationBarItem(icon: ImageIcon(AssetImage('AppIcons.')),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.shopping_bag,),label: ''),
-        BottomNavigationBarItem(icon: ImageIcon(AssetImage('path'),),label: ''),
-        BottomNavigationBarItem(icon: ImageIcon(AssetImage('path',),),label: ''),
-        BottomNavigationBarItem(icon: ImageIcon(AssetImage('path'),),label: '')
+        BottomNavigationBarItem(icon: ImageIcon(AssetImage('AppIcons.homelogo.png')),label: ''),
+        BottomNavigationBarItem(ImageIcon(AssetImage('AppIcons.shoplogo.png'))label: ''),
+        BottomNavigationBarItem(ImageIcon(AssetImage('AppIcons.calendarlogo.png')),label: ''),
+        BottomNavigationBarItem(ImageIcon(AssetImage('AppIcons.categorylogo.png')),label: ''),
+        BottomNavigationBarItem(ImageIcon(AssetImage('AppIcons.paperpluslogo.png')),label: '')
 
 
       ],
