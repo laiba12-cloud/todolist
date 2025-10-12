@@ -38,7 +38,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         selectedIconTheme: IconThemeData(color: Colors.blue),
         unselectedIconTheme: IconThemeData(color: Colors.purple),
           items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: ''),
+        BottomNavigationBarItem(icon: ImageIcon(AssetImage('AppIcons.')),label: ''),
         BottomNavigationBarItem(icon: Icon(Icons.shopping_bag,),label: ''),
         BottomNavigationBarItem(icon: ImageIcon(AssetImage('path'),),label: ''),
         BottomNavigationBarItem(icon: ImageIcon(AssetImage('path',),),label: ''),
