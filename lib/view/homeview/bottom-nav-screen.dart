@@ -28,7 +28,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:SingleChildScrollView(child: screens.elementAt(index)),
+      body:screens.elementAt(index),
       bottomNavigationBar: BottomNavigationBar(
 
           currentIndex: index,
@@ -41,8 +41,8 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         selectedIconTheme: IconThemeData(color: AppColors.CyanColor),
         unselectedIconTheme: IconThemeData(color: AppColors.GreyColor),
           items: [
-        BottomNavigationBarItem(icon: Image.asset(AppIcons.homelogo),label: ''),
-        BottomNavigationBarItem(icon:Image.asset(AppIcons.shoplogo),label: ''),
+        BottomNavigationBarItem(icon: Image.asset(AppIcons.homelogo,color: index==0?AppColors.CyanColor:AppColors.GreyColor,),label: ''),
+        BottomNavigationBarItem(icon:Image.asset(AppIcons.shoplogo,color: index==1?AppColors.CyanColor:AppColors.GreyColor,),label: ''),
         BottomNavigationBarItem(icon:Image.asset(AppIcons.calendarlogo),label: ''),
         BottomNavigationBarItem(icon:Image.asset(AppIcons.categorylogo),label: ''),
         BottomNavigationBarItem(icon:Image.asset(AppIcons.paperpluslogo),label: ''),

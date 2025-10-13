@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:BottomNavScreen()
+      home:DatePickerClass()
       //ThemeScreen()
       //OnBoardingthreeScreen()
       //OnBoardingtwoScreen()
@@ -29,6 +29,42 @@ class MyApp extends StatelessWidget {
       //SplashScreen()
       //LoginScreen()
       //SplashScreen(),// This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+
+
+class DatePickerClass extends StatefulWidget {
+  const DatePickerClass({super.key});
+
+  @override
+  State<DatePickerClass> createState() => _DatePickerClassState();
+}
+
+class _DatePickerClassState extends State<DatePickerClass> {
+  
+  
+  DateTime? date;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Date=$date'),),
+      body: Center(child: TextButton(onPressed: ()
+      async //---asynchronous--
+      {
+        //class   object ----> all access of the given class---
+        DateTime? pickedDate= await showDatePicker(
+            context: context,
+            firstDate: DateTime(2000),
+            lastDate: DateTime(2030));
+        if(pickedDate!=null){
+          date=pickedDate;
+          setState(() {
+            
+          });
+        }
+      }, child: Text('Date pick')),),
     );
   }
 }
