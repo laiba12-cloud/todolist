@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:todolist/controller/utills/appcolors.dart';
-class CyanButton extends StatelessWidget {
+class CyanButton extends StatefulWidget {
   String text;
-  VoidCallBack ontap;
+ final VoidCallback ontap;
    CyanButton({super.key,required this.text,required this.ontap});
 
+  @override
+  State<CyanButton> createState() => _CyanButtonState();
+}
+
+class _CyanButtonState extends State<CyanButton> {
   @override
   Widget build(BuildContext context) {
 //
     return InkWell(
-      onTap:ontap,
+      onTap:widget.ontap,
       child: Container(
-        margin:EdgeInsets.Symmetric(horizontal:20),
+        margin:EdgeInsets.symmetric(horizontal:20),
         height: 40,
         decoration:BoxDecoration(
           color: AppColors.CyanColor,
@@ -21,7 +26,7 @@ class CyanButton extends StatelessWidget {
         ),
       child:Center(
         child:Text(
-          text,
+          widget.text,
           style:TextStyle(
             color:Colors.white,
 

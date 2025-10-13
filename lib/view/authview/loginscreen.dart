@@ -35,7 +35,7 @@ class LoginScreen extends StatelessWidget {
             Spacer(),
             Padding(
               padding: const EdgeInsets.all(40.0),
-              child: CyanButton(text: 'Next',),
+              child: CyanButton(text: 'Next', ontap: () {  },),
             ),
             SizedBox(height: 5,)
           ],

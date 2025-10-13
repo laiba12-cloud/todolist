@@ -28,7 +28,7 @@ class ThemeScreen extends StatelessWidget {
             ]
           ),
           Spacer(),
-          CyanButton(text: 'Open TodyApp'),
+          CyanButton(text: 'Open TodyApp', ontap: (){},),
           SizedBox(height:30),
         ],
       ),

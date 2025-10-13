@@ -20,8 +20,7 @@ class FillForm extends StatelessWidget {
           BlackTextWidget(text: 'Create more than 1000  \n projects tasks '),
           GreyTextWidget(text: 'Upgrade to premium users to get things about premium \n features that you can enjoy only with pay for one year \n or one month subscription'),
           Spacer(),
-          
-          CyanButton(text: 'Continue',)
+          CyanButton(text: 'Continue', ontap: (){},)
         ],
       ),
       ),

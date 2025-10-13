@@ -37,7 +37,7 @@ class SignupScreen extends StatelessWidget {
           Spacer(),
           Padding(
             padding: const EdgeInsets.all(40.0),
-            child: CyanButton(text: 'Signup',),
+            child: CyanButton(text: 'Signup', ontap: () {  },),
           ),
           SizedBox(height: 5,)
         ],

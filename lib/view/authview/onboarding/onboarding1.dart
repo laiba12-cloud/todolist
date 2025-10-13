@@ -72,7 +72,7 @@ class OnBoardingoneScreen extends StatelessWidget {
                   Spacer(),
                   Padding(
                     padding: const EdgeInsets.only(left: 30.0,right: 30.0),
-                    child: CyanButton(text: 'Continue'),
+                    child: CyanButton(text: 'Continue', ontap: () {  },),
                   ),
                   SizedBox(height: 20,),
                 ],
