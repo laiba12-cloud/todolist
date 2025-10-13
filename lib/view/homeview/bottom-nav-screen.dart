@@ -4,6 +4,7 @@ import 'package:todolist/view/homeview/choosethemes.dart';
 import 'package:todolist/view/homeview/create%20task.dart';
 
 import '../../controller/utills/appcolors.dart';
+import '../../controller/utills/appicons/appicons.dart';
 
 
 
@@ -27,7 +28,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: screens.elementAt(index),
+      body:SingleChildScrollView(child: screens.elementAt(index)),
       bottomNavigationBar: BottomNavigationBar(
 
           currentIndex: index,
@@ -38,13 +39,13 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
             });
         },
         selectedIconTheme: IconThemeData(color: AppColors.CyanColor),
-        unselectedIconTheme: IconThemeData(color: AppColors.GreyColor.withOpacity(2)),
+        unselectedIconTheme: IconThemeData(color: AppColors.GreyColor),
           items: [
-        BottomNavigationBarItem(icon: ImageIcon(AssetImage('AppIcons.homelogo.png')),label: ''),
-        BottomNavigationBarItem(icon:ImageIcon(AssetImage('AppIcons.shoplogo.png')),label: ''),
-        BottomNavigationBarItem(icon:ImageIcon(AssetImage('AppIcons.calendarlogo.png')),label: ''),
-        BottomNavigationBarItem(icon:ImageIcon(AssetImage('AppIcons.categorylogo.png')),label: ''),
-        BottomNavigationBarItem(icon:ImageIcon(AssetImage('AppIcons.paperpluslogo.png')),label: ''),
+        BottomNavigationBarItem(icon: Image.asset(AppIcons.homelogo),label: ''),
+        BottomNavigationBarItem(icon:Image.asset(AppIcons.shoplogo),label: ''),
+        BottomNavigationBarItem(icon:Image.asset(AppIcons.calendarlogo),label: ''),
+        BottomNavigationBarItem(icon:Image.asset(AppIcons.categorylogo),label: ''),
+        BottomNavigationBarItem(icon:Image.asset(AppIcons.paperpluslogo),label: ''),
 
 
       ],
