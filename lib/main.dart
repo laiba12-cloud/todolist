@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:DatePickerClass()
+      home:TimePicker()
       //ThemeScreen()
       //OnBoardingthreeScreen()
       //OnBoardingtwoScreen()
@@ -68,3 +68,41 @@ class _DatePickerClassState extends State<DatePickerClass> {
     );
   }
 }
+
+
+class TimePicker extends StatefulWidget {
+  const TimePicker({super.key});
+
+  @override
+  State<TimePicker> createState() => _TimePickerState();
+}
+
+class _TimePickerState extends State<TimePicker> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body:Column(
+        children:[
+          TextButton(onPressed:()
+          async
+          {
+            TimeOfDay? pickedTime=await showTimePicker(
+                context: context,
+                initialTime: TimeOfDay.now(),
+              builder: (context, child){
+                  return MediaQuery(
+                      data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: false),
+                      child: child!);
+              }
+            );
+          },child:Text('Pick Time'))
+        ]
+      )
+    );
+  }
+}
+
+
+
+
+
