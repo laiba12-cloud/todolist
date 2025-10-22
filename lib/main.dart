@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todolist/controller/utills/appcolors.dart';
+
 import 'package:todolist/view/authview/loginscreen.dart';
 import 'package:todolist/view/authview/onboarding/onboarding1.dart';
 import 'package:todolist/view/authview/onboarding/onboarding2.dart';
@@ -23,6 +24,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home:SimpleClass()
+
+      //TimePicker()
       //ThemeScreen()
       //OnBoardingthreeScreen()
       //OnBoardingtwoScreen()
@@ -73,15 +76,18 @@ class _DatePickerClassState extends State<DatePickerClass> {
 
 class TimePicker extends StatefulWidget {
   const TimePicker({super.key});
-
   @override
   State<TimePicker> createState() => _TimePickerState();
 }
 
 class _TimePickerState extends State<TimePicker> {
+  TimeOfDay? time;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        title: Text('time=$time'),
+      ),
       body:Column(
         children:[
           TextButton(onPressed:()
@@ -94,8 +100,13 @@ class _TimePickerState extends State<TimePicker> {
                   return MediaQuery(
                       data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: false),
                       child: child!);
+
               }
             );
+            if(pickedTime!=null){
+              time=pickedTime;
+              setState((){});
+            }
           },child:Text('Pick Time'))
         ]
       )
