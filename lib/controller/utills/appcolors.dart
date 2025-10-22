@@ -8,7 +8,7 @@ class AppColors{
   static Color LightSalmonColor=Color(0xffFFA07A);
   static Color WhiteColor=Color(0xffFFFFFF);
   static Color SilverColor=Color(0xffC0C0C0);
-  static Color GreyColor=Color(0xff808080);
+  static const Color GreyColor=Color(0xff808080);
   static Color BlackColor=Color(0xff000000);
   static Color RedColor=Color(0xffFF0000);
   static Color MaroonColor=Color(0xff800000);
@@ -22,6 +22,6 @@ class AppColors{
   static Color NavyColor=Color(0xff000080);
   static Color FuchsiaColor=Color(0xffFF00FF);
   static Color PurpleColor=Color(0xff800080);
-  static Color CyanColor=Color(0xff24A19C);
+   static const  Color CyanColor=Color(0xff24A19C);
   static Color lightCyan=Color(0xffCBF1F0);
 }

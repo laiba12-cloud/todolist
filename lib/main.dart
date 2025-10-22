@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todolist/controller/utills/appcolors.dart';
 import 'package:todolist/view/authview/loginscreen.dart';
 import 'package:todolist/view/authview/onboarding/onboarding1.dart';
 import 'package:todolist/view/authview/onboarding/onboarding2.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:TimePicker()
+      home:SimpleClass()
       //ThemeScreen()
       //OnBoardingthreeScreen()
       //OnBoardingtwoScreen()
@@ -43,8 +44,8 @@ class DatePickerClass extends StatefulWidget {
 }
 
 class _DatePickerClassState extends State<DatePickerClass> {
-  
-  
+
+
   DateTime? date;
   @override
   Widget build(BuildContext context) {
@@ -61,7 +62,7 @@ class _DatePickerClassState extends State<DatePickerClass> {
         if(pickedDate!=null){
           date=pickedDate;
           setState(() {
-            
+
           });
         }
       }, child: Text('Date pick')),),
@@ -101,6 +102,87 @@ class _TimePickerState extends State<TimePicker> {
     );
   }
 }
+
+
+
+
+
+class SimpleClass extends StatefulWidget {
+  const SimpleClass({super.key});
+
+  @override
+  State<SimpleClass> createState() => _SimpleClassState();
+}
+
+class _SimpleClassState extends State<SimpleClass> {
+  bool isSelected=false;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(child: ButtonWidgetColor(onPress: (){
+        isSelected=true;
+        setState(() {
+
+        });
+      },  buttonText: 'Add time', icon: Icons.add,
+        buttonColor: isSelected==true?AppColors.CyanColor:AppColors.GreyColor,
+        textColor: isSelected==true?Colors.white:AppColors.CyanColor,
+
+
+      ),),
+    );
+  }
+}
+
+
+class ButtonWidgetColor extends StatelessWidget {
+  String buttonText;
+  IconData icon;
+  Color buttonColor;
+  Color textColor;
+  Color iconColor;
+  VoidCallback onPress;
+   ButtonWidgetColor({super.key, required this.buttonText, required this.icon,
+   this.buttonColor= AppColors.GreyColor,
+     this.textColor=AppColors.CyanColor,
+     this.iconColor=AppColors.CyanColor,
+      required this.onPress
+
+
+   });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onPress,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: buttonColor
+        ),
+        child: Row(children: [
+          Icon(icon,color: iconColor,),
+          Text(buttonText,style: TextStyle(color:textColor ),)
+        ],),
+      ),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
