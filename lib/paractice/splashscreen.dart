@@ -1,12 +1,30 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:todolist/controller/components/WHITELARGETEXT.dart';
 import 'package:todolist/controller/components/whitesmallwidget.dart';
 import 'package:todolist/controller/utills/appcolors.dart';
 import 'package:todolist/controller/utills/appicons/appicons.dart';
-class SplashScreenP extends StatelessWidget {
+import 'package:todolist/paractice/onboarding/onboard1.dart';
+class SplashScreenP extends StatefulWidget {
   const SplashScreenP({super.key});
 
   @override
+  State<SplashScreenP> createState() => _SplashScreenPState();
+}
+
+class _SplashScreenPState extends State<SplashScreenP> {
+  @override
+  void initState(){
+    Timer(
+      Duration(seconds: 3),(){
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context)=>OnBoard1()));
+    }
+    );
+
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.CyanColor,

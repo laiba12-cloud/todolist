@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todolist/paractice/onboarding/onboard1.dart';
 import 'package:todolist/paractice/splashscreen.dart';
 import 'package:todolist/view/authview/loginscreen.dart';
 import 'package:todolist/view/authview/onboarding/onboarding1.dart';
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:SplashScreenP()
+      home://OnBoard1()
+      SplashScreenP()
       //TimePicker()
       //ThemeScreen()
       //OnBoardingthreeScreen()
