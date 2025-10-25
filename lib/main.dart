@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todolist/controller/utills/appcolors.dart';
+import 'package:todolist/paractice/onboarding/onboard2.dart';
 import 'package:todolist/view/authview/loginscreen.dart';
 import 'package:todolist/view/authview/onboarding/onboarding1.dart';
 import 'package:todolist/view/authview/onboarding/onboarding2.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SimpleClass(), // You can change this to SplashScreen() or OnBoard1()
+      home: OnBoard2(), // You can change this to SplashScreen() or OnBoard1()
     );
   }
 }

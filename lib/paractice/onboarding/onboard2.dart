@@ -73,7 +73,7 @@ Row(
                   ),
                   Spacer(),
                   CyanButton(text: 'Continue', ontap: (){
-                    OnBoard3();
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>OnBoard3()));
                   }),
                 ],
               ) ,

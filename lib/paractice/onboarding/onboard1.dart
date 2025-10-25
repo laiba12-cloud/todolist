@@ -13,7 +13,10 @@ class OnBoard1 extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-        Row(
+        Expanded(
+      flex: 50,
+      child:Column(children: [
+          Row(
           children: [
             Spacer(),
             CyanTextWidget(text: 'Skip'),
@@ -35,7 +38,10 @@ class OnBoard1 extends StatelessWidget {
                   child: Image.asset(AppImages.thirdImage),
                 ),
           ],
-            ),
+            ),],
+      ),
+    ),
+          Expanded(child:Column(children: [
           SizedBox(height: 20,),
           Padding(
           padding: const EdgeInsets.symmetric(horizontal: 150.0,vertical: 20),
@@ -45,9 +51,12 @@ class OnBoard1 extends StatelessWidget {
           GreyTextWidget(text: 'Here is a mobile platform that helps you create task \n or to list so that it can help you in every job \n easier and faster '),
           Spacer(),
           CyanButton(text: 'Continue', ontap: (){
-            OnBoard2();
+            Navigator.pushReplacement(context, MaterialPageRoute(Builder:(context)=>OnBoard2()));
           }),
           SizedBox(height: 20,),
+    ],
+          ),
+          ),
         ],
       ),
     );
