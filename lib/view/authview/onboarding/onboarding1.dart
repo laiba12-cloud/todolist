@@ -4,6 +4,7 @@ import 'package:todolist/controller/components/cyanbutton.dart';
 import 'package:todolist/controller/components/greytextwidget.dart';
 import 'package:todolist/controller/utills/appcolors.dart';
 import 'package:todolist/controller/utills/appimages/appimages.dart';
+import 'package:todolist/paractice/onboarding/onboard2.dart';
 class OnBoardingoneScreen extends StatelessWidget {
   const OnBoardingoneScreen({super.key});
 
@@ -72,7 +73,9 @@ class OnBoardingoneScreen extends StatelessWidget {
                   Spacer(),
                   Padding(
                     padding: const EdgeInsets.only(left: 30.0,right: 30.0),
-                    child: CyanButton(text: 'Continue', ontap: () {  },),
+                    child: CyanButton(text: 'Continue', ontap: () {
+                      OnBoard2();
+                    },),
                   ),
                   SizedBox(height: 20,),
                 ],

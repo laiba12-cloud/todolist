@@ -10,4 +10,5 @@ class AppIcons{
   static String homelogo='assets/icons/Home.png';
   static String shoplogo='assets/icons/shopicon.png';
   static String paperpluslogo='assets/icons/Paper Plus.png';
+  static String eyeofflogo='assets/icons/eyeooflogo.png';
 }

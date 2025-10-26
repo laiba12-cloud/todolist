@@ -16,7 +16,7 @@ class _CyanButtonState extends State<CyanButton> {
     return InkWell(
       onTap:widget.ontap,
       child: Container(
-        margin:EdgeInsets.symmetric(horizontal:20),
+        margin:EdgeInsets.symmetric(horizontal:150),
         height: 40,
         decoration:BoxDecoration(
           color: AppColors.CyanColor,

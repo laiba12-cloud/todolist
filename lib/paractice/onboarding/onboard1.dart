@@ -13,10 +13,7 @@ class OnBoard1 extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-        Expanded(
-      flex: 70,
-      child:Column(children: [
-          Row(
+        Row(
           children: [
             Spacer(),
             CyanTextWidget(text: 'Skip'),
@@ -38,26 +35,19 @@ class OnBoard1 extends StatelessWidget {
                   child: Image.asset(AppImages.thirdImage),
                 ),
           ],
-            ),],
-      ),
-    ),
-          Expanded(
-            flex: 30,
-            child:Column(children: [
+            ),
+          SizedBox(height: 20,),
           Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 150.0,vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 150.0,vertical: 20),
           child:BlackTextWidget(text: 'Your Convenience in \n Making a tody list App'),
           ),
-          SizedBox(height: 5,),
+          SizedBox(height: 10,),
           GreyTextWidget(text: 'Here is a mobile platform that helps you create task \n or to list so that it can help you in every job \n easier and faster '),
           Spacer(),
           CyanButton(text: 'Continue', ontap: (){
-            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>OnBoard2()));
+            OnBoard2();
           }),
-          SizedBox(height: 5,),
-    ],
-          ),
-          ),
+          SizedBox(height: 20,),
         ],
       ),
     );

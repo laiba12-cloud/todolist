@@ -5,7 +5,6 @@ import 'package:todolist/controller/components/cyanicontext.dart';
 import 'package:todolist/controller/components/cyantextwidget.dart';
 import 'package:todolist/controller/utills/appicons/appicons.dart';
 import 'package:todolist/controller/utills/appimages/appimages.dart';
-import 'package:todolist/paractice/home/home2.dart';
 class OnBoard3 extends StatelessWidget {
   const OnBoard3({super.key});
 
@@ -44,9 +43,7 @@ class OnBoard3 extends StatelessWidget {
               child: Column(
                 children: [
 Spacer(),
-                  CyanIconText(text: 'continue with email', ontap: (){
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home2()));
-                  }, icon: AppIcons.messagelogo),
+                  CyanIconText(text: 'continue with email', ontap: (){}, icon: AppIcons.messagelogo),
                 ],
               ))
         ],
