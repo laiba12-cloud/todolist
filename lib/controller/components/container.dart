@@ -9,7 +9,7 @@ class ContainerWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.all(18),
+          margin: EdgeInsets.symmetric(horizontal: 40,vertical: 20),
             height:20,
             width:double.infinity,
             decoration:BoxDecoration(

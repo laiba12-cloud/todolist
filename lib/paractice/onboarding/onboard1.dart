@@ -14,7 +14,7 @@ class OnBoard1 extends StatelessWidget {
       body: Column(
         children: [
         Expanded(
-      flex: 50,
+      flex: 70,
       child:Column(children: [
           Row(
           children: [
@@ -41,19 +41,20 @@ class OnBoard1 extends StatelessWidget {
             ),],
       ),
     ),
-          Expanded(child:Column(children: [
-          SizedBox(height: 20,),
+          Expanded(
+            flex: 30,
+            child:Column(children: [
           Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 150.0,vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 150.0,vertical: 10),
           child:BlackTextWidget(text: 'Your Convenience in \n Making a tody list App'),
           ),
-          SizedBox(height: 10,),
+          SizedBox(height: 5,),
           GreyTextWidget(text: 'Here is a mobile platform that helps you create task \n or to list so that it can help you in every job \n easier and faster '),
           Spacer(),
           CyanButton(text: 'Continue', ontap: (){
-            Navigator.pushReplacement(context, MaterialPageRoute(Builder:(context)=>OnBoard2()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>OnBoard2()));
           }),
-          SizedBox(height: 20,),
+          SizedBox(height: 5,),
     ],
           ),
           ),
