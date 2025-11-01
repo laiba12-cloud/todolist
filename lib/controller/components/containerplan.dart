@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todolist/controller/components/textwidget.dart';
+import 'package:todolist/controller/utills/appcolors.dart';
 class Containerplan extends StatelessWidget {
   final Color clr;
   final String text1;
@@ -23,9 +24,9 @@ class Containerplan extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:
           [
-            TextWidget(txt: ''),
-            TextWidget(txt: ''),
-            TextWidget(txt: ''),
+            TextWidget(txt: '', clr: AppColors.GreyColor,),
+            TextWidget(txt: '', clr: AppColors.GreyColor),
+            TextWidget(txt: '', clr: AppColors.GreyColor),
           ]
       ),
     );

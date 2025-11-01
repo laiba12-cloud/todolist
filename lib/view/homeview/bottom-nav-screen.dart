@@ -35,7 +35,6 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         onTap: (value){
             index=value;
             setState(() {
-
             });
         },
         selectedIconTheme: IconThemeData(color: AppColors.CyanColor),
